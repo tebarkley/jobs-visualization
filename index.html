@@ -1,0 +1,202 @@
+<!-- <!DOCTYPE html> -->
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Job Viz</title>
+</head>
+<body>
+  <div id='title-container' class="container">
+    <div class = 'row'>
+      <div id='title-row' class='pull-left col-md-6'>Jobs and Skills in the Bay Area </div>
+      <div id = 'subtitle' class='pull-left col-md-6'>Explore information from 15,000 recent job postings in the Bay Area</div>
+    </div>
+   <!--  <div id = 'subtitle' class = 'row'>
+      <div class = "col-md-2"></div>
+      <div class = "col-md-8 text-center">Explore information pulled from 15,000 recent job postings in the Bay Area</div>
+      <div class="col-md-2"> </div>
+    </div> -->
+  </div>
+  <div id = 'buttons-container' class="container">
+    <div id='industry-explain' class='row' >
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center"><strong>Click on an industry to filter the job and skill plots</strong></div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class='row industry-row'>
+      <div class="col-md-2 col-md-offset-1 industry-col">
+        <div class='industry-button'>
+          <img id="accounting" class ='industry center-block' src="images/icons-01.png">
+          <div class="industry-label">
+            <div class='industry-title'>Accounting and Finance</div>
+            <div class='industry-count'>1.2k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="administrative" class='industry center-block' src="images/icons-04.png">
+          <div class="industry-label">
+            <div class='industry-title'>Administrative</div>
+            <div class = 'industry-count'>1.7k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+         <img id="construction" class='industry center-block' src="images/icons-07.png">
+          <div class="industry-label">
+            <div class="industry-title">Construction and Labor</div>
+            <div class="industry-count">1.6k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="education" class='industry center-block' src="images/icons-10.png">
+          <div class="industry-label">
+            <div class="industry-title">Education</div>
+            <div class="industry-count">300 jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="engineering" class='industry center-block' src="images/icons-13.png">
+          <div class="industry-label">
+            <div class='industry-title'>Engineering and Architecture</div>
+            <div class ='industry-count'>1.5k jobs</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class='row industry-row'>
+      <div class="col-md-2 col-md-offset-1 industry-col">
+        <div class='industry-button'>
+          <img id="food" class ='industry center-block' src="images/icons-02.png">
+          <div class="industry-label">
+            <div class="industry-title">Food and Travel</div> 
+            <div class="industry-count">1.1k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="healthcare" class='industry center-block' src="images/icons-05.png">
+          <div class="industry-label">
+            <div class="industry-title">Health Care</div> 
+            <div class="industry-count">1.2k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="it" class='industry center-block' src="images/icons-08.png">
+          <div class="industry-label">
+            <div class="industry-title">Information Technology</div> 
+            <div class="industry-count">3.6k jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="law" class='industry center-block' src="images/icons-11.png">
+          <div class="industry-label">
+            <div class="industry-title">Law</div>
+            <div class="industry-count">400 jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="management" class='industry center-block' src="images/icons-14.png">
+          <div class="industry-label">
+            <div class="industry-title">Management and Consulting </div> 
+            <div class="industry-count">1.6k jobs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class='row industry-row'>
+      <div class="col-md-2 col-md-offset-1 industry-col">
+        <div class='industry-button'>
+          <img id="nonprofit" class ='industry center-block' src="images/icons-03.png">
+          <div class="industry-label">
+            <div class="industry-title">Non-profit </div> 
+            <div class="industry-count">300 jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="retail" class='industry center-block' src="images/icons-06.png">
+          <div class="industry-label">
+            <div class="industry-title">Retail </div> 
+            <div class="industry-count">500 jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="sales" class='industry center-block' src="images/icons-09.png">
+          <div class="industry-label">
+            <div class="industry-title">Sales and Marketing </div> 
+            <div class="industry-count">2.5k jobs </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="science" class='industry center-block' src="images/icons-12.png">
+          <div class="industry-label">
+            <div class="industry-title">Science and Research</div>
+            <div class="industry-count">400 jobs</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 industry-col">
+        <div class='industry-button'>
+          <img id="transportation" class='industry center-block' src="images/icons-15.png">
+          <div class="industry-label">
+            <div class="industry-title">Transportation </div> 
+            <div class="industry-count">350 jobs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id='reset-button center-block'>
+          <button type="button" id='reset' class="btn btn-default center-block" disabled="disabled">Reset To All Jobs</button>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <section id="job-chart-container" class='chart-container' style="overflow-y: scroll; height:400px;">
+
+        </section>
+      </div>
+      <div class="col-md-6">
+        <section id="skill-chart-container" class='chart-container' style="overflow-y: scroll; height:400px;">
+
+        </section>
+       
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script src="js/lodash.min.js"></script>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/d3.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/data.js"></script>
+<script type="text/javascript" src='js/script.js'></script>
